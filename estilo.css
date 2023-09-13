@@ -496,13 +496,19 @@ h1{
 
     /* inicio footer */
 
-.pie-pagina{
+.pie-pagina {
     width: 100%;
     background-color: black;
     padding: 20px;
     height: 100%;
 }
-
+.pie-pagina .grupo-1 .box i{
+ 
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box i:hover{
+    color: violet;
+}
  
 .pie-pagina .grupo-1{
     width: 100%;
