@@ -485,19 +485,35 @@ input, textarea{
     text-shadow: 1px 1px 2px rgb(209, 96, 209);
     width: 50%;
     /* border: 2px solid rgba(0, 0, 0, 0.781); */
-    padding: 50px;
+    padding: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
+    /* color: #fff; */
     float: center;
     font-size: 50px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
    }
 .call4{
     color: white;
     font-size: 20px;
+
+
 }
 .call4 table th{
-    font-size: 25px;
+    font-size: 23px;
+    color: rgba(250, 127, 250, 0.945);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
     
+}
+.call4 table td{
+
+    font-size: 18px;
+    padding: 2px;
 }
 
 h1{
