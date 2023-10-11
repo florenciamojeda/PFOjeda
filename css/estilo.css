@@ -111,7 +111,7 @@ main {
 }
 
 main .call2 {
-  height: 900px;
+  height: auto;
   width: auto;
   background-color: black;
   background-image: url(../img/salon.jpg);
@@ -174,26 +174,8 @@ main .call5 {
   color: whitesmoke;
   text-shadow: 1px 1px 2px violet;
   width: 100%;
-  padding: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-}
-.call2 h2 {
-  color: whitesmoke;
-  text-shadow: 1px 1px 2px violet;
-  width: 100%;
-  padding: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-size: 30px;
-}
-.call2 ul li {
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  margin-right: 12%;
-  text-align: left;
-  width: 100%;
 }
 .call2 p {
   font-size: 20px;
@@ -604,6 +586,84 @@ video {
 
 .footer a:hover {
   color: blueviolet;
+}
+
+.contenedor {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(18, 50px);
+  grid-template-areas: "img1 img2" "img1 img2" "img1 img2" "img1 img4" "img1 img4" "img1 img4" "img7 img4" "img7 img4" "img7 img4" "img8 img8" "img8 img8" "img8 img8" "img5 img6" "img5 img6" "img5 img6" "img3 img3" "img3 img3" "img3 img3";
+  grid-gap: 15px;
+  padding: 25px;
+}
+
+.item {
+  border-radius: 7px;
+  filter: grayscale(1);
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #000;
+  transition: all 0.9s;
+  box-shadow: 0 0 5px #000;
+  background-image: center;
+}
+
+.item1 {
+  background-image: url(../img/Apeople-2604151_1920.jpg);
+  grid-area: img1;
+}
+
+.item2 {
+  background-image: url(../img/fitness-room-1180062_1280.jpg);
+  grid-area: img2;
+}
+
+.item3 {
+  background-image: url(../img/man-6331987_1280.jpg);
+  grid-area: img3;
+}
+
+.item4 {
+  background-image: url(../img/woman-1284656_1280.jpg);
+  grid-area: img4;
+}
+
+.item5 {
+  background-image: url(../img/workout-1931107_1280.jpg);
+  grid-area: img5;
+}
+
+.item6 {
+  background-image: url(../img/team-771474_1280.jpg);
+  grid-area: img6;
+}
+
+.item7 {
+  background-image: url(../img/treadmill-5030966_1280.jpg);
+  grid-area: img7;
+}
+
+.item8 {
+  background-image: url(../img/weight-lifting-1284616_1280.jpg);
+  grid-area: img8;
+}
+
+.item:hover {
+  filter: grayscale(0);
+  transform: scale(0.9);
+}
+
+@media only screen and (min-width: 780px) {
+  .contenedor {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8";
+    grid-gap: 15px;
+    padding: 25px;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
